@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card" role="main">
+    <header class="profile-header">
+      <figure class="profile-avatar">
+        <img src="my-photo.jpg" alt="Profile picture of Tarh Beteck" data-testid="test-user-avatar"/>
+      </figure>
+      <div class="profile-info">
+        <h1 data-testid="test-user-name" class="user-name">Enow Ethel</h1>
+        <p data-testid="test-user-bio" class="user-bio">Frontend/Backend Developer passionate about clean code and open source.</p>
+        <time data-testid="test-user-time" class="user-time" datetime="">Loading...</time>
+      </div>
+    </header>
+
+    <section class="profile-content">
+      <nav data-testid="test-user-social-links" class="social-links" aria-label="Social media links">
+        <a href="https://github.com/janedoe" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+        <a href="https://linkedin.com/in/janedoe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="https://twitter.com/janedoe" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">Twitter</a>
+      </nav>
+
+      <div class="profile-details">
+        <section aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading">Hobbies</h2>
+          <ul data-testid="test-user-hobbies" class="list hobbies">
+            <li>Coding challenges</li>
+            <li>Open source contributions</li>
+            <li>Mountain biking</li>
+            <li>I love reading novels, watching animes</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="dislikes-heading">
+          <h2 id="dislikes-heading">Dislikes</h2>
+          <ul data-testid="test-user-dislikes" class="list dislikes">
+            <li>Code duplication</li>
+            <li>Poor documentation</li>
+            <li>Monday mornings!</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
